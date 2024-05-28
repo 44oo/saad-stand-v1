@@ -1,6 +1,6 @@
 getgenv().Settings = {
     ['Made By Saad#2494'] = {
-        OWNER = "DexAbc", --/ Stand owner username.
+        OWNER = "SaadAbc", --/ Stand owner username.
         STANDS = {"ReportWontHelp"}, --/ List of your stand accounts (if you have more than one you can add more usernames to the table).
         FPS = 30, --/ Will control FPS can improve the overall performance on both instances when set to lower.
         PERFORMANCE = false, --/ If set to true it'll significantly improve your overall FPS if you're struggling with performance.
