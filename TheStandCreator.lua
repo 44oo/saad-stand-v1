@@ -5,11 +5,11 @@ if not game['Loaded'] or not game:GetService("Players").LocalPlayer then
     game:GetService('Players'):WaitForChild(game:GetService("Players").LocalPlayer.Name)
 end
 --//------------------------------------------------------------------------------------------\\--
-for i,v in pairs(Settings['Made By JoJo#2494'].STANDS) do 
+for i,v in pairs(Settings['Made By Saad#2494'].STANDS) do 
 if game:GetService("Players").LocalPlayer.Name == v then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/JOJOGIO/STAND-FRAMEWORK/main/1.0.9"))()
     STAND = game:GetService("Players"):FindFirstChild(tostring(v))
-    OWNER = game:GetService("Players"):WaitForChild(Settings['Made By JoJo#2494'].OWNER)
+    OWNER = game:GetService("Players"):WaitForChild(Settings['Made By Saad#2494'].OWNER)
     rs = game:GetService("RunService") 
 --//------------------------------------------------------------------------------------------\\--
     assert(getrawmetatable)
@@ -31,17 +31,17 @@ if game:GetService("Players").LocalPlayer.Name == v then
     end)
 --//------------------------------------------------------------------------------------------\\--
     game:GetService("Players").PlayerAdded:Connect(function(Player)
-        if Player:WaitForChild("Name") == Settings['Made By JoJo#2494'].OWNER then
+        if Player:WaitForChild("Name") == Settings['Made By Saad#2494'].OWNER then
             OWNER = Player
         end
-        if Settings['Made By JoJo#2494'].ANTIBAN then
+        if Settings['Made By Saad#2494'].ANTIBAN then
             if Player:WaitForChild("Backpack"):FindFirstChild("AdminBan") then
                 STAND:Kick("Stand Creator: Staff has joined the server.")
             end
         end
     end)
 --//------------------------------------------------------------------------------------------\\--
-    if Settings['Made By JoJo#2494'].ANTIBAN then
+    if Settings['Made By Saad#2494'].ANTIBAN then
         for i,v in pairs(game:GetService("Players"):GetPlayers()) do
             if v and v:WaitForChild("Backpack"):FindFirstChild("AdminBan") then
                 STAND:Kick("Stand Creator: Staff was in the server.")
@@ -51,19 +51,19 @@ if game:GetService("Players").LocalPlayer.Name == v then
 --//------------------------------------------------------------------------------------------\\--
     function Notify(title,text)
       game:GetService("StarterGui"):SetCore("SendNotification",  {
-            Title = title;
-            Text = text;
-            Duration = 3;
+             Title = "Welcome to saad stand";
+        Text = "Saad stand is the best";
+            Duration = 1;
             Button1 = "";
             Callback = NotificationBindable;
         })
     end
 --//------------------------------------------------------------------------------------------\\-
-    if tonumber(Settings['Made By JoJo#2494'].FPS) then
-        setfpscap(Settings['Made By JoJo#2494'].FPS)
+    if tonumber(Settings['Made By Saad#2494'].FPS) then
+        setfpscap(Settings['Made By Saad#2494'].FPS)
     end
 --//------------------------------------------------------------------------------------------\\-
-    if Settings['Made By JoJo#2494'].PERFORMANCE then
+    if Settings['Made By Saad#2494'].PERFORMANCE then
      game:GetService("RunService"):Set3dRenderingEnabled(false)
      local g = game
      local w = g.Workspace
@@ -99,7 +99,7 @@ local function x()
         Target = ""
     }
 STAND = game:GetService("Players"):FindFirstChild(tostring(v))
-OWNER = game:GetService("Players"):WaitForChild(Settings['Made By JoJo#2494'].OWNER)
+OWNER = game:GetService("Players"):WaitForChild(Settings['Made By Saad#2494'].OWNER)
 rs = game:GetService("RunService") 
 repeat rs.Stepped:Wait() until STAND.Character:FindFirstChild("ForceField") or STAND.Character:FindFirstChild("ForceField_TESTING")
 STAND.Character:WaitForChild("Humanoid")
@@ -107,7 +107,7 @@ STAND.Character:WaitForChild("Head")
 STAND.Character:WaitForChild("BodyEffects")
 STAND.Character:WaitForChild("HumanoidRootPart")
 --//------------------------------------------------------------------------------------------\\-
-if Settings['Made By JoJo#2494'].TITAN.GODV3 then
+if Settings['Made By Saad#2494'].TITAN.GODV3 then
     pcall(function()
     game:GetService("StarterPlayer").StarterCharacterScripts["CheckingKOED                                                                   ."]:Destroy()
     for i,v in pairs(STAND.Character:GetChildren()) do
@@ -118,7 +118,7 @@ if Settings['Made By JoJo#2494'].TITAN.GODV3 then
     end)
 end
 --//------------------------------------------------------------------------------------------\\-
-  if Settings['Made By JoJo#2494'].TITAN.ENABLED then
+  if Settings['Made By Saad#2494'].TITAN.ENABLED then
 	coroutine.wrap(function()
 	repeat wait() until STAND.Backpack:FindFirstChild("Mask")
 		coroutine.wrap(function()
@@ -138,7 +138,7 @@ end
 			tall = false
 			wide = false
 			default = false
-			if Settings['Made By JoJo#2494'].TITAN.TALL and wide == false and default == false then
+			if Settings['Made By Saad#2494'].TITAN.TALL and wide == false and default == false then
 				tall = true
 				if STAND.Character.Humanoid:FindFirstChild("HeadScale") then
 					rm()
@@ -165,7 +165,7 @@ end
 					wait(0.6)
 				end
 			end
-			if Settings['Made By JoJo#2494'].TITAN.WIDE and tall == false and default == false then
+			if Settings['Made By Saad#2494'].TITAN.WIDE and tall == false and default == false then
 				wide = true
 				if STAND.Character.Humanoid:FindFirstChild("HeadScale") then
 					rm()
@@ -180,7 +180,7 @@ end
 					wait(0.6)
 				end
 			end
-			if Settings['Made By JoJo#2494'].TITAN.DEFAULT and tall == false and wide == false then
+			if Settings['Made By Saad#2494'].TITAN.DEFAULT and tall == false and wide == false then
 				default = true
 				if STAND.Character.Humanoid:FindFirstChild("HeadScale") then
 					rm()
@@ -221,7 +221,7 @@ end
         Clone1.Parent = STAND.Character.BodyEffects 
     end
 --//------------------------------------------------------------------------------------------\\--
-    if Settings['Made By JoJo#2494'].FACELESS then
+    if Settings['Made By Saad#2494'].FACELESS then
     for i,f in pairs(STAND.Character:FindFirstChild("Head"):GetChildren()) do
         if f:IsA("Decal") and f.Name == "face" then
             f.Parent = nil
@@ -244,7 +244,7 @@ end
 		STAND.Character.LeftUpperLeg:Destroy()
     end
 --//------------------------------------------------------------------------------------------\\--
-if Settings['Made By JoJo#2494'].TRAILS then
+if Settings['Made By Saad#2494'].TRAILS then
     coroutine.wrap(function()
         STAND.Character.Humanoid:WaitForChild("TrailEffects"):Destroy()
     end)()
@@ -256,7 +256,7 @@ repeat
     fireclickdetector(game:GetService("Workspace").Ignored.Shop["[Paintball Mask] - $60"].ClickDetector)
 until STAND.Backpack:FindFirstChild("Mask")
 --//------------------------------------------------------------------------------------------\\-- 
-if Settings['Made By JoJo#2494'].TELEPORTMAIN then
+if Settings['Made By Saad#2494'].TELEPORTMAIN then
     pcall(function()
         STAND.Character:WaitForChild('HumanoidRootPart').CFrame = OWNER.Character:WaitForChild('HumanoidRootPart').CFrame * CFrame.new(0,0,math.random(2,4))
     end)
@@ -301,9 +301,9 @@ end
 --//------------------------------------------------------------------------------------------\\--
 AnimPlay(3541114300,1)
 --//------------------------------------------------------------------------------------------\\--
-if Settings['Made By JoJo#2494'].FOLLOWANIM then
+if Settings['Made By Saad#2494'].FOLLOWANIM then
     local Glide = Instance.new('Animation', game:GetService("Workspace"))
-    Glide.AnimationId = 'rbxassetid://'.. tonumber(Settings['Made By JoJo#2494'].FOLLOWANIM.ID)
+    Glide.AnimationId = 'rbxassetid://'.. tonumber(Settings['Made By Saad#2494'].FOLLOWANIM.ID)
     Glide.Name = "Follow"
     Glide2 = STAND.Character:FindFirstChildWhichIsA('Humanoid'):LoadAnimation(Glide)
     function Moved()
@@ -311,15 +311,15 @@ if Settings['Made By JoJo#2494'].FOLLOWANIM then
           if Glide2.IsPlaying == true then
             return
           end
-            Glide2:Play(tonumber(Settings['Made By JoJo#2494'].FOLLOWANIM.SPEED))
+            Glide2:Play(tonumber(Settings['Made By Saad#2494'].FOLLOWANIM.SPEED))
           else
-            Glide2:Stop(tonumber(Settings['Made By JoJo#2494'].FOLLOWANIM.SPEED))
+            Glide2:Stop(tonumber(Settings['Made By Saad#2494'].FOLLOWANIM.SPEED))
           end     
        end
     OWNER.Character:WaitForChild("Humanoid"):GetPropertyChangedSignal("MoveDirection"):Connect(Moved)
 end
 --//------------------------------------------------------------------------------------------\\--
-Notify("JoJo's Stand Framework 1.0.9","Success!")
+Notify("Saad's Stand Framework 1.0.9","Success!")
 end
 --//------------------------------------------------------------------------------------------\\----//------------------------------------------------------------------------------------------\\--
 if not STAND.Character:FindFirstChild("ForceField_TESTING") then
@@ -330,7 +330,7 @@ else
     x()
 end
 --//------------------------------------------------------------------------------------------\\--
-if Settings['Made By JoJo#2494'].NOCLIP.SynapseX then
+if Settings['Made By Saad#2494'].NOCLIP.SynapseX then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/LegoHacker1337/legohacks/main/PhysicsServiceOnClient.lua"))()
     setfflag("HumanoidParallelRemoveNoPhysics", "False")
     setfflag("HumanoidParallelRemoveNoPhysicsNoSimulate2", "False")
@@ -345,7 +345,7 @@ else
     noclip.Size = Vector3.new(6,0.1,6)
     noclip.Anchored = true
     noclip.Transparency = 1
-    local x = Settings['Made By JoJo#2494'].NOCLIP.Offset
+    local x = Settings['Made By Saad#2494'].NOCLIP.Offset
     rs.Stepped:Connect(function()
     pcall(function()
         STAND.Character.Head.CanCollide = false
@@ -412,7 +412,7 @@ OWNER.CharacterAdded:Connect(function(chr)
     OWNER.Character:WaitForChild("Humanoid"):GetPropertyChangedSignal("MoveDirection"):Connect(Moved)
 end)
 --//------------------------------------------------------------------------------------------\\--
-if Settings['Made By JoJo#2494'].ANTIFLING then
+if Settings['Made By Saad#2494'].ANTIFLING then
     coroutine.wrap(function()
     local Services = setmetatable({}, {__index = function(Self, Index)
     local NewService = game.GetService(game, Index)
@@ -989,7 +989,7 @@ Buy = {
 }
 --//------------------------------------------------------------------------------------------\\--
 coroutine.wrap(function()
-    while Settings['Made By JoJo#2494'].AUTOPICKUPCASH == true do
+    while Settings['Made By Saad#2494'].AUTOPICKUPCASH == true do
         wait()
         for _,v in pairs(game:GetService('Workspace'):FindFirstChild('Ignored'):FindFirstChild('Drop'):GetChildren()) do
             if v:IsA('Part') then
