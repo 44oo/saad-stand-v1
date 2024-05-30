@@ -1,4 +1,3 @@
---// Stand Creator 1.1.0 \\--
 if not game['Loaded'] or not game:GetService("Players").LocalPlayer then 
     game['Loaded']:Wait();
     game:WaitForChild(game:GetService('Players'));
