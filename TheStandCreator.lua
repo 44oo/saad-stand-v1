@@ -71,7 +71,7 @@ if game:GetService("Players").LocalPlayer.Name == v then
     t.WaterWaveSize = 0
     t.WaterWaveSpeed = 0
     t.WaterReflectance = 0
-    t.WaterTransparency = 1
+    t.WaterTransparency = 0
     l.GlobalShadows = false
         for _,v in pairs(game:GetService("Workspace"):GetDescendants()) do
             if v.ClassName == "Part"
@@ -141,63 +141,63 @@ end
 				tall = true
 				if STAND.Character.Humanoid:FindFirstChild("HeadScale") then
 					rm()
-					wait(0.6)
+					wait(0.3)
 					STAND.Character.Humanoid:FindFirstChild("HeadScale"):Destroy()
-					wait(0.6)
+					wait(0.3)
 				end
 				if STAND.Character.Humanoid:FindFirstChild("BodyWidthScale") then
 					rm()
-					wait(0.6)
+					wait(0.3)
 					STAND.Character.Humanoid:FindFirstChild("BodyWidthScale"):Destroy()
-					wait(0.6)
+					wait(0.3)
 				end
 				if STAND.Character.Humanoid:FindFirstChild("BodyDepthScale") then
 					rm()
-					wait(0.6)
+					wait(0.3)
 					STAND.Character.Humanoid:FindFirstChild("BodyDepthScale"):Destroy()
-					wait(0.6)
+					wait(0.3)
 				end
 				if STAND.Character.Humanoid:FindFirstChild("BodyTypeScale") then
 					rm()
-					wait(0.6)
+					wait(0.3)
 					STAND.Character.Humanoid:FindFirstChild("BodyTypeScale"):Destroy()
-					wait(0.6)
+					wait(0.3)
 				end
 			end
 			if Settings['Made By Saad#2494'].TITAN.WIDE and tall == false and default == false then
 				wide = true
 				if STAND.Character.Humanoid:FindFirstChild("HeadScale") then
 					rm()
-					wait(0.6)
+					wait(0.3)
 					STAND.Character.Humanoid:FindFirstChild("HeadScale"):Destroy()
-					wait(0.6)
+					wait(0.3)
 				end
 				if STAND.Character.Humanoid:FindFirstChild("BodyDepthScale") then
 					rm()
-					wait(0.6)
+					wait(0.3)
 					STAND.Character.Humanoid:FindFirstChild("BodyDepthScale"):Destroy()
-					wait(0.6)
+					wait(0.3)
 				end
 			end
 			if Settings['Made By Saad#2494'].TITAN.DEFAULT and tall == false and wide == false then
 				default = true
 				if STAND.Character.Humanoid:FindFirstChild("HeadScale") then
 					rm()
-					wait(0.6)
+					wait(0.3)
 					STAND.Character.Humanoid:FindFirstChild("HeadScale"):Destroy()
-					wait(0.6)
+					wait(0.3)
 				end
 				if STAND.Character.Humanoid:FindFirstChild("BodyWidthScale") then
 					rm()
-					wait(0.6)
+					wait(0.3)
 					STAND.Character.Humanoid:FindFirstChild("BodyWidthScale"):Destroy()
-					wait(0.6)
+					wait(0.3)
 				end
 				if STAND.Character.Humanoid:FindFirstChild("BodyDepthScale") then
 					rm()
-					wait(0.6)
+					wait(0.3)
 					STAND.Character.Humanoid:FindFirstChild("BodyDepthScale"):Destroy()
-					wait(0.6)
+					wait(0.3)
 				end
 			end
         end)()
@@ -260,7 +260,7 @@ if Settings['Made By Saad#2494'].TELEPORTMAIN then
         STAND.Character:WaitForChild('HumanoidRootPart').CFrame = OWNER.Character:WaitForChild('HumanoidRootPart').CFrame * CFrame.new(0,0,math.random(2,4))
     end)
 else
-    STAND.Character.HumanoidRootPart.CFrame = STAND.Character.HumanoidRootPart.CFrame*CFrame.new(0,3,0)
+    STAND.Character.HumanoidRootPart.CFrame = STAND.Character.HumanoidRootPart.CFrame*CFrame.new(0,0,0)
 end
 --//------------------------------------------------------------------------------------------\\--
 mask = STAND.Backpack:FindFirstChild("Mask")
@@ -281,7 +281,7 @@ function AnimPlay(ID, SPEED)
     if tonumber(SPEED) then
         playing:AdjustSpeed(SPEED)
     else
-        playing:AdjustSpeed(1)
+        playing:AdjustSpeed(2)
     end
     animation:Destroy()
 end
@@ -329,8 +329,8 @@ else
     x()
 end
 --//------------------------------------------------------------------------------------------\\--
-if Settings['Made By Saad#2494'].NOCLIP.SynapseX then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/LegoHacker1337/legohacks/main/PhysicsServiceOnClient.lua"))()
+if Settings['Made By Saad#2494'].NoClip.SwagMode then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002"))()
     setfflag("HumanoidParallelRemoveNoPhysics", "False")
     setfflag("HumanoidParallelRemoveNoPhysicsNoSimulate2", "False")
     rs:BindToRenderStep("", Enum.RenderPriority.Camera.Value, function()
@@ -358,9 +358,9 @@ else
 end
 --//------------------------------------------------------------------------------------------\\--
 STAND.Idled:connect(function()
-    game:GetService("VirtualUser"):Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+    game:GetService("VirtualUser"):Button2Down(Vector3.new(0,0),workspace.CurrentCamera.CFrame)
     wait(1)
-    game:GetService("VirtualUser"):Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+    game:GetService("VirtualUser"):Button2Up(Vector3.new(0,0),workspace.CurrentCamera.CFrame)
 end)
 --//------------------------------------------------------------------------------------------\\--
 rs.RenderStepped:connect(function()
@@ -741,7 +741,7 @@ Buy = {
             Target = ""
             }
             repeat
-                rs.Stepped:Wait()
+   rs.Stepped:Wait()
                 STAND.Character.HumanoidRootPart.CFrame = CFrame.new(game:GetService("Workspace").Ignored.Shop["[Bat] - $250"].Head.Position)
                 fireclickdetector(game:GetService("Workspace").Ignored.Shop["[Bat] - $250"].ClickDetector)
               until STAND.Backpack:FindFirstChild("[Bat]")
